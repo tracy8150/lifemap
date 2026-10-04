@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tracy 的人生、事業與家庭策略模型。">
+  <meta name="theme-color" content="#14233c">
+  <title>Tracy 人生策略模型</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314233c'/%3E%3Cpath d='M14 19h36M32 19v30M19 30h26' stroke='%23ff6b4a' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要內容</a>
+
+  <aside class="rail" aria-label="報告目錄">
+    <div class="brand">
+      <span class="brand-mark">T</span>
+      <div>
+        <strong>Tracy</strong>
+        <small>Life Strategy 1.0</small>
+      </div>
+    </div>
+
+    <nav class="rail-nav">
+      <a class="active" href="#overview"><span>01</span>人生模型</a>
+      <a href="#pillars"><span>02</span>七大支柱</a>
+      <a href="#income"><span>03</span>收入路徑</a>
+      <a href="#capacity"><span>04</span>時間容量</a>
+      <a href="#roadmap"><span>05</span>三階段路線</a>
+      <a href="#family"><span>06</span>家庭制度</a>
+      <a href="#risks"><span>07</span>防崩潰設計</a>
+      <a href="#next"><span>08</span>現在開始</a>
+    </nav>
+
+    <div class="rail-bottom">
+      <button class="print-button" type="button" id="printButton">
+        <span aria-hidden="true">↗</span> 列印／存成 PDF
+      </button>
+      <p>以訪談資料為底稿<br>2026 · v1.0</p>
+    </div>
+  </aside>
+
+  <header class="mobile-header">
+    <div class="brand">
+      <span class="brand-mark">T</span>
+      <strong>人生策略模型</strong>
+    </div>
+    <button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="mobileNav">目錄</button>
+  </header>
+  <nav class="mobile-nav" id="mobileNav" aria-label="行動版目錄">
+    <a href="#overview">人生模型</a><a href="#pillars">七大支柱</a><a href="#income">收入路徑</a>
+    <a href="#capacity">時間容量</a><a href="#roadmap">三階段路線</a><a href="#family">家庭制度</a>
+    <a href="#risks">防崩潰</a><a href="#next">現在開始</a>
+  </nav>
+
+  <main id="main">
+    <section class="page intro-page" id="overview">
+      <div class="page-kicker">01 · LIFE SYSTEM</div>
+      <div class="intro-grid">
+        <div class="intro-copy">
+          <p class="eyebrow">Tracy 人生策略模型</p>
+          <h1>不是回到以前。<br><em>是設計下一個 Tracy。</em></h1>
+          <p class="lead">以家為基地，以睡眠為能源，以個人能力創造收入，以清楚邊界保護自由。</p>
+
+          <div class="identity-quote">
+            <span>一句話身份</span>
+            <p>讀懂混亂、找到真正問題、重新排列資源，替公司也替自己設計下一步的人。</p>
+          </div>
+
+          <div class="legend" aria-label="資料類型篩選">
+            <button class="legend-chip is-active" data-filter="all" type="button">全部</button>
+            <button class="legend-chip fact" data-filter="fact" type="button"><i></i>事實</button>
+            <button class="legend-chip strategy" data-filter="strategy" type="button"><i></i>策略</button>
+            <button class="legend-chip test" data-filter="test" type="button"><i></i>待驗證</button>
+          </div>
+        </div>
+
+        <div class="system-map" aria-label="人生策略關係圖">
+          <svg viewBox="0 0 620 620" role="img" aria-labelledby="mapTitle mapDesc">
+            <title id="mapTitle">Tracy 人生策略關係圖</title>
+            <desc id="mapDesc">自我實現位於中心，透過自由、金錢、睡眠、工作、家庭邊界與孩子七個環節形成可持續人生。</desc>
+            <circle class="orbit orbit-one" cx="310" cy="310" r="220"/>
+            <circle class="orbit orbit-two" cx="310" cy="310" r="142"/>
+            <path class="orbit-path" d="M310 90A220 220 0 0 1 530 310"/>
+            <g class="map-center">
+              <circle cx="310" cy="310" r="88"/>
+              <text x="310" y="296">自我實現</text>
+              <text class="sub" x="310" y="330">我能靠自己</text>
+              <text class="sub" x="310" y="352">聰明地活過人生</text>
+            </g>
+            <g class="node node-a" transform="translate(310 76)"><circle r="55"/><text y="-4">自由</text><text class="sub" y="20">決定權</text></g>
+            <g class="node node-b" transform="translate(513 198)"><circle r="55"/><text y="-4">金錢</text><text class="sub" y="20">安全線</text></g>
+            <g class="node node-c" transform="translate(513 422)"><circle r="55"/><text y="-4">工作</text><text class="sub" y="20">診斷力</text></g>
+            <g class="node node-d" transform="translate(310 544)"><circle r="55"/><text y="-4">家庭</text><text class="sub" y="20">有邊界</text></g>
+            <g class="node node-e" transform="translate(107 422)"><circle r="55"/><text y="-4">孩子</text><text class="sub" y="20">有交接</text></g>
+            <g class="node node-f" transform="translate(107 198)"><circle r="55"/><text y="-4">睡眠</text><text class="sub" y="20">能源</text></g>
+          </svg>
+          <div class="map-caption">核心不是「做更多」，而是讓七個環節互相支撐。</div>
+        </div>
+      </div>
+
+      <div class="score-strip">
+        <article data-type="fact"><span>價值排序 #1</span><strong>自我實現</strong><small>開啟其他通道</small></article>
+        <article data-type="strategy"><span>工作容量</span><strong>12–15h</strong><small>每週核心工時</small></article>
+        <article data-type="fact"><span>安全收入線</span><strong>8 萬</strong><small>生活＋房貸缺口</small></article>
+        <article data-type="test"><span>生活基地</span><strong>在家</strong><small>低移動、高恢復</small></article>
+      </div>
+    </section>
+
+    <section class="page" id="pillars">
+      <div class="section-heading">
+        <div><div class="page-kicker">02 · SEVEN PILLARS</div><h2>七個支柱，構成一個能運作的人生</h2></div>
+        <p>每一項都不是獨立願望。收入買回自由，睡眠提供判斷力，家庭邊界保護工作，工作再反過來建立自主。</p>
+      </div>
+
+      <div class="pillar-grid">
+        <article class="pillar primary" data-type="fact"><b>01</b><span>核心</span><h3>自我實現</h3><p>完成能代表自己的作品，證明個人能力可以持續創造收入。</p></article>
+        <article class="pillar" data-type="strategy"><b>02</b><span>決定權</span><h3>自由</h3><p>能決定何時工作、如何休息，也能拒絕不合適的合作。</p></article>
+        <article class="pillar" data-type="strategy"><b>03</b><span>基礎設施</span><h3>金錢</h3><p>先站穩 8 萬安全線，再建立 10 萬穩定與 20 萬選擇權。</p></article>
+        <article class="pillar" data-type="fact"><b>04</b><span>能源</span><h3>睡眠健康</h3><p>不是做完事情才配得到的獎勵，而是整套系統的電力。</p></article>
+        <article class="pillar" data-type="strategy"><b>05</b><span>天賦區</span><h3>診斷工作</h3><p>研究大量資料、找出真正問題、排序選項、設計下一步。</p></article>
+        <article class="pillar" data-type="strategy"><b>06</b><span>共同責任</span><h3>孩子</h3><p>有愛，也要有責任時段、換班與生病備援。</p></article>
+        <article class="pillar" data-type="test"><b>07</b><span>合作制度</span><h3>婚姻邊界</h3><p>低干涉、高邊界、責任明確；是否可行要靠四週試行。</p></article>
+      </div>
+
+      <div class="decision-rule">
+        <span>人生決策規則</span>
+        <p>如果一個機會<strong>無法累積自己的資產</strong>、需要<strong>長期待命</strong>，又會<strong>破壞睡眠與家庭交接</strong>，它就不屬於下一個 Tracy。</p>
+      </div>
+    </section>
+
+    <section class="page income-page" id="income">
+      <div class="section-heading light">
+        <div><div class="page-kicker">03 · INCOME LADDER</div><h2>收入不是終點，是逐級買回選擇權</h2></div>
+        <p>前期靠服務驗證價值；後期靠價格、流程與可重複資產，避免收入和工時一起無限上升。</p>
+      </div>
+
+      <div class="income-staircase" aria-label="收入階梯">
+        <article class="step s1" data-type="fact"><span>生存線</span><strong>5 萬</strong><p>個人生活粗估</p></article>
+        <article class="step s2" data-type="strategy"><span>自主安全線</span><strong>8 萬</strong><p>生活＋房貸缺口</p></article>
+        <article class="step s3" data-type="strategy"><span>第一成功線</span><strong>10 萬</strong><p>開始建立穩定與緩衝</p></article>
+        <article class="step s4" data-type="test"><span>理想線</span><strong>20 萬</strong><p>高價服務＋可重複資產</p></article>
+      </div>
+
+      <div class="model-cards">
+        <article data-type="strategy">
+          <span class="model-tag">8 萬模型</span>
+          <h3>1 核心案＋1 入口案＋1 回診</h3>
+          <div class="equation"><b>50,000</b><i>＋</i><b>20,000</b><i>＋</i><b>10,000</b><em>＝ 80,000</em></div>
+          <p>比四個小案更符合 Tracy 喜歡深入研究的工作方式。</p>
+        </article>
+        <article data-type="test">
+          <span class="model-tag">20 萬模型</span>
+          <h3>不是塞滿四個 5 萬案</h3>
+          <div class="equation"><b>高價診斷</b><i>＋</i><b>標準流程</b><i>＋</i><b>重複資產</b></div>
+          <p>需要案例、利基與付費意願成立後才往這裡走。</p>
+        </article>
+      </div>
+
+      <div class="service-flow" data-type="strategy">
+        <div><span>01</span><strong>資料一次收齊</strong><small>不無限追資料</small></div>
+        <i></i><div><span>02</span><strong>研究＋訪談</strong><small>找矛盾與核心問題</small></div>
+        <i></i><div><span>03</span><strong>診斷與排序</strong><small>提出選項與取捨</small></div>
+        <i></i><div><span>04</span><strong>90 天實驗</strong><small>有限回診，不陪跑</small></div>
+      </div>
+    </section>
+
+    <section class="page" id="capacity">
+      <div class="section-heading">
+        <div><div class="page-kicker">04 · WEEKLY CAPACITY</div><h2>不是十小時空白，就等於十小時可以工作</h2></div>
+        <p>先保留恢復與家庭緩衝，再把最好的注意力給高價值判斷。</p>
+      </div>
+
+      <div class="capacity-layout">
+        <div class="week-board" data-type="strategy">
+          <div class="week-head"><span>理想一週容量</span><strong>核心工作 3 天</strong></div>
+          <div class="day-row"><b>一</b><div class="block restore">恢復／生活</div><div class="block deep">深度工作 4–5h</div><div class="block family">家庭</div></div>
+          <div class="day-row"><b>二</b><div class="block restore wide">自主／休息／家務彈性</div><div class="block family">家庭</div></div>
+          <div class="day-row"><b>三</b><div class="block restore">恢復／生活</div><div class="block deep">深度工作 4–5h</div><div class="block family">家庭</div></div>
+          <div class="day-row"><b>四</b><div class="block admin">行政＋個人資產</div><div class="block restore">自主時間</div><div class="block family">家庭</div></div>
+          <div class="day-row"><b>五</b><div class="block restore">恢復／生活</div><div class="block deep">深度工作 4–5h</div><div class="block family">家庭</div></div>
+          <div class="day-row weekend"><b>末</b><div class="block off wide">至少一日完全不工作</div><div class="block father">固定爸爸班</div></div>
+          <div class="week-legend"><i class="l-deep"></i>深度工作 <i class="l-restore"></i>恢復 <i class="l-family"></i>家庭 <i class="l-admin"></i>輕量工作</div>
+        </div>
+
+        <div class="capacity-numbers">
+          <article><span>60%</span><p>研究、分析與策略</p></article>
+          <article><span>20%</span><p>訪談、簡報與交付</p></article>
+          <article><span>10%</span><p>行政與銷售</p></article>
+          <article><span>10%</span><p>自己的方法與案例</p></article>
+          <blockquote>上午能否工作，不先靠意志決定；先用 14 天睡眠紀錄找答案。</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="page roadmap-page" id="roadmap">
+      <div class="section-heading">
+        <div><div class="page-kicker">05 · ROADMAP</div><h2>三個階段，不同問題</h2></div>
+        <p>第一階段不是擴張，而是證明；第二階段才追求穩定；第三階段才談槓桿與 20 萬。</p>
+      </div>
+
+      <div class="roadmap-line" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="phase-grid">
+        <article data-type="strategy"><span class="phase-no">01</span><small>現在 → 90 天</small><h3>穩住並證明</h3><p>第一位非雇主的客戶，願意因 Tracy 的判斷付費。</p><ul><li>14 天睡眠紀錄</li><li>1–3 個付費測試案</li><li>一份案例證據包</li><li>四週家庭制度試行</li></ul><b>過關：有人付費，做完仍想繼續</b></article>
+        <article data-type="strategy"><span class="phase-no">02</span><small>3 → 12 個月</small><h3>穩定現金流</h3><p>集中一個核心服務，把偶發收入變成可預測收入。</p><ul><li>站穩月收 8 萬</li><li>挑戰 10 萬</li><li>流程標準化</li><li>建立固定案源</li></ul><b>過關：連續三個月接近安全線</b></article>
+        <article data-type="test"><span class="phase-no">03</span><small>1 → 3 年</small><h3>擴大選擇權</h3><p>收入增加，不依賴工時等比例增加。</p><ul><li>提高客戶與問題價值</li><li>累積方法與口碑</li><li>加入工具／工作坊</li><li>評估 Life Strategist</li></ul><b>過關：20 萬不靠把時間塞滿</b></article>
+      </div>
+    </section>
+
+    <section class="page family-page" id="family">
+      <div class="section-heading">
+        <div><div class="page-kicker">06 · FAMILY OPERATING SYSTEM</div><h2>共同責任，但不必隨時待命</h2></div>
+        <p>室友型不是冷淡，而是把責任、換班與自由時間說清楚。</p>
+      </div>
+
+      <div class="family-principle" data-type="strategy">
+        <div><span>固定責任</span><b>＞</b><small>臨時幫忙</small></div>
+        <div><span>換班請求</span><b>＞</b><small>自動補位</small></div>
+        <div><span>補回時間</span><b>＞</b><small>犧牲算了</small></div>
+        <div><span>可預期</span><b>＞</b><small>永久待命</small></div>
+      </div>
+
+      <div class="handoff-diagram">
+        <article data-type="strategy"><span class="person">爸</span><h3>責任時段</h3><p>例如週六 08:30–12:30，完整主責孩子。</p></article>
+        <div class="handoff-arrow"><span>臨時急件？</span><b>提出換班</b><small>當場約定補回</small></div>
+        <article data-type="strategy"><span class="person coral">Tracy</span><h3>自主時段</h3><p>可工作、睡覺、出門或什麼都不做。</p></article>
+      </div>
+
+      <div class="family-grid">
+        <article data-type="test"><span>30 分鐘規則</span><h3>超過就正式換班</h3><p>不在客廳每 20 分鐘重新猜一次「到底好了沒」。</p></article>
+        <article data-type="strategy"><span>7 天規則</span><h3>被占用的時間要補回</h3><p>補回的是自主時間，不默認拿去補家事。</p></article>
+        <article data-type="strategy"><span>金錢規則</span><h3>用完整數字談家計</h3><p>共同支出、個人房產與各自責任分開列示。</p></article>
+        <article data-type="test"><span>四週試行</span><h3>先固定一個爸爸班</h3><p>不一次重做整個婚姻，先驗證協議能否被遵守。</p></article>
+      </div>
+    </section>
+
+    <section class="page risks-page" id="risks">
+      <div class="section-heading light">
+        <div><div class="page-kicker">07 · RESILIENCE</div><h2>好的人生模型，要能承受壞的一週</h2></div>
+        <p>不是追求零突發，而是突發時知道降載、交接與恢復。</p>
+      </div>
+
+      <div class="risk-grid">
+        <article data-type="strategy"><span>01</span><h3>連續睡不好</h3><p>取消非必要會議，只做最低交付；48 小時內不做重大決定。</p><b>先補能源</b></article>
+        <article data-type="strategy"><span>02</span><h3>孩子生病 7–14 天</h3><p>暫停新案與內容，啟動先生請假／提早下班和客戶延期規則。</p><b>系統降載</b></article>
+        <article data-type="strategy"><span>03</span><h3>收入沒有出現</h3><p>先檢查客群、問題、證據與銷售入口，不先判定自己沒有能力。</p><b>修正假設</b></article>
+        <article data-type="test"><span>04</span><h3>再次想快速做大</h3><p>沒有三個月穩定需求前，不招人、不囤貨、不增加固定成本。</p><b>保留退路</b></article>
+      </div>
+
+      <div class="never-again">
+        <div><span>NEVER AGAIN</span><h3>下一個 Tracy 不再用這些方式換收入</h3></div>
+        <ul><li>大量員工</li><li>重資產與實體產品</li><li>長期待命</li><li>小編／代操</li><li>無限改稿</li><li>追客戶進度</li><li>固定進辦公室</li><li>睡眠換交付</li></ul>
+      </div>
+    </section>
+
+    <section class="page next-page" id="next">
+      <div class="page-kicker">08 · START HERE</div>
+      <div class="next-layout">
+        <div>
+          <h2>現在不用解決整個人生。<br><em>只驗證四件事。</em></h2>
+          <p>第一版模型的任務，是讓 Tracy 在不重新失控的前提下，獲得第一批真實資料。</p>
+        </div>
+        <ol class="next-list">
+          <li data-type="fact"><span>01</span><div><b>記錄 14 天睡眠</b><p>入睡、起床、夜醒、隔日精神 0–10。</p></div></li>
+          <li data-type="strategy"><span>02</span><div><b>賣出第一個付費診斷</b><p>一個問題，15,000–25,000 元測試價，8–12 小時上限。</p></div></li>
+          <li data-type="test"><span>03</span><div><b>試行四週爸爸班</b><p>固定半天，使用換班與補時規則。</p></div></li>
+          <li data-type="strategy"><span>04</span><div><b>算清真正家庭現金流</b><p>確認 5 萬、8 萬安全線與共同家計責任。</p></div></li>
+        </ol>
+      </div>
+
+      <blockquote class="manifesto">
+        <p>我不需要把自己訓練成適合別人的人生。<br>我要根據自己的能力、身體、孩子、責任與限制，設計一個能長久運作的系統。</p>
+        <footer>Tracy Life Strategy · v1.0</footer>
+      </blockquote>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
